@@ -110,6 +110,9 @@ body {
   @media (max-width: 75em) {
     .u-margin-bottom-big {
       margin-bottom: 5rem !important; } }
+  @media (max-width: 37.5em) {
+    .u-margin-bottom-big {
+      margin-bottom: 2.5rem !important; } }
 
 .u-margin-bottom-small {
   margin-bottom: 2rem !important; }
@@ -119,6 +122,9 @@ body {
   @media (max-width: 56.25em) {
     .u-margin-bottom-huge {
       margin-bottom: 8rem !important; } }
+  @media (max-width: 37.5em) {
+    .u-margin-bottom-huge {
+      margin-bottom: 4rem !important; } }
 
 .u-margin-top-small {
   margin-top: 2rem !important; }
@@ -289,6 +295,9 @@ body {
     .row {
       max-width: 60rem;
       padding: 0 1rem; } }
+  @media (max-width: 37.5em) {
+    .row {
+      max-width: 80%; } }
   .row::after {
     content: "";
     display: table;
@@ -471,6 +480,10 @@ body {
       .header__btn {
         left: 10%;
         bottom: 20%; } }
+    @media (max-width: 37.5em) {
+      .header__btn {
+        left: 3rem;
+        bottom: 1.5rem; } }
   .header__background {
     position: relative;
     display: inline-block;
@@ -484,6 +497,10 @@ body {
         width: 100%;
         height: 30vh;
         float: none; } }
+    @media (max-width: 37.5em) {
+      .header__background {
+        margin-top: 3rem;
+        height: 20vh; } }
   .header__image {
     display: inline-block;
     position: absolute;
@@ -497,6 +514,9 @@ body {
     @media (max-width: 56.25em) {
       .header__image {
         width: 40vh; } }
+    @media (max-width: 37.5em) {
+      .header__image {
+        width: 30vh; } }
 
 .header-sm__wrap {
   display: inline-block;
@@ -544,43 +564,51 @@ body {
     -webkit-background-clip: text;
     color: transparent; }
 
-.sponsors {
-  height: 8rem; }
-  .sponsors__container {
-    margin: 0; }
-    @media (max-width: 56.25em) {
-      .sponsors__container {
-        margin: 10rem 0; } }
-  .sponsors__list {
-    padding: 0;
-    display: block;
-    text-align: center; }
-  .sponsors__item {
-    list-style: none;
-    display: inline-block;
-    height: 6rem; }
-    .sponsors__item:not(:last-child) {
-      padding-right: 1rem; }
-  .sponsors__logo {
-    height: 5rem;
-    animation: moveInBtn 2s ease-out .75s;
-    animation-fill-mode: backwards; }
-    @media (max-width: 75em) {
-      .sponsors__logo {
-        height: 3rem; } }
-  .sponsors__link {
-    text-decoration: none;
-    padding: 1rem 2rem;
-    border-top: 2px solid transparent;
-    border-bottom: 2px solid transparent;
-    display: inline-block;
-    transition: all .4s ease;
-    opacity: .7; }
-    .sponsors__link:hover {
-      transform: translateY(-3px) scale(1.03);
-      border-top: 2px solid #FFC837;
-      border-bottom: 2px solid #FFC837;
-      opacity: 1; }
+.sponsors__container {
+  margin: 0 auto; }
+
+.sponsors__list {
+  padding: 0;
+  display: block;
+  text-align: center; }
+
+.sponsors__item {
+  list-style: none;
+  display: inline-block;
+  height: 6rem; }
+  .sponsors__item:not(:last-child) {
+    padding-right: 1rem; }
+  @media (max-width: 37.5em) {
+    .sponsors__item {
+      padding-right: .5rem; } }
+
+.sponsors__logo {
+  height: 5rem;
+  animation: moveInBtn 2s ease-out .75s;
+  animation-fill-mode: backwards; }
+  @media (max-width: 75em) {
+    .sponsors__logo {
+      height: 3rem; } }
+  @media (max-width: 37.5em) {
+    .sponsors__logo {
+      height: 2rem; } }
+
+.sponsors__link {
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  display: inline-block;
+  transition: all .4s ease;
+  opacity: .7; }
+  .sponsors__link:hover {
+    transform: translateY(-3px) scale(1.03);
+    border-top: 2px solid #FFC837;
+    border-bottom: 2px solid #FFC837;
+    opacity: 1; }
+  @media (max-width: 37.5em) {
+    .sponsors__link {
+      padding: .5rem 1rem; } }
 
 .feature-box {
   background: rgba(252, 252, 252, 0.8);
@@ -627,7 +655,9 @@ body {
       text-align: right; } }
   @media (max-width: 56.25em) {
     .breed__img-wrapper {
-      width: 100%; } }
+      width: 100%;
+      text-align: center;
+      margin-top: 1rem; } }
 
 .breed__img {
   border-radius: 2px;
@@ -644,6 +674,9 @@ body {
   @media (max-width: 56.25em) {
     .breed__img {
       width: 18rem; } }
+  @media (max-width: 37.5em) {
+    .breed__img {
+      width: 27%; } }
 
 .breed__btn {
   position: absolute;
