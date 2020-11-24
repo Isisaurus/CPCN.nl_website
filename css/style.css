@@ -112,7 +112,7 @@ body {
       margin-bottom: 5rem !important; } }
   @media (max-width: 37.5em) {
     .u-margin-bottom-big {
-      margin-bottom: 2.5rem !important; } }
+      margin-bottom: 3rem !important; } }
 
 .u-margin-bottom-small {
   margin-bottom: 2rem !important; }
@@ -124,7 +124,7 @@ body {
       margin-bottom: 8rem !important; } }
   @media (max-width: 37.5em) {
     .u-margin-bottom-huge {
-      margin-bottom: 4rem !important; } }
+      margin-bottom: 6rem !important; } }
 
 .u-margin-top-small {
   margin-top: 2rem !important; }
@@ -482,8 +482,8 @@ body {
         bottom: 20%; } }
     @media (max-width: 37.5em) {
       .header__btn {
-        left: 3rem;
-        bottom: 1.5rem; } }
+        left: 5rem;
+        bottom: 2.5rem; } }
   .header__background {
     position: relative;
     display: inline-block;
@@ -492,31 +492,30 @@ body {
     width: 50%;
     z-index: -2;
     background-image: linear-gradient(to right bottom, #FFC837, #FF8008); }
+    @media (max-width: 75em) {
+      .header__background {
+        height: 40rem; } }
     @media (max-width: 56.25em) {
       .header__background {
         width: 100%;
-        height: 30vh;
+        height: 25rem;
         float: none; } }
-    @media (max-width: 37.5em) {
-      .header__background {
-        margin-top: 3rem;
-        height: 20vh; } }
   .header__image {
     display: inline-block;
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 70vh;
+    width: 60rem;
     z-index: -1; }
     @media (max-width: 75em) {
       .header__image {
-        width: 50vh; } }
+        width: 45rem; } }
     @media (max-width: 56.25em) {
       .header__image {
-        width: 40vh; } }
+        width: 35rem; } }
     @media (max-width: 37.5em) {
       .header__image {
-        width: 30vh; } }
+        width: 30rem; } }
 
 .header-sm__wrap {
   display: inline-block;
@@ -638,13 +637,13 @@ body {
 
 .breed__wrap {
   position: relative;
-  height: 50vh; }
+  height: 45rem; }
   @media (max-width: 75em) {
     .breed__wrap {
-      height: 35vh; } }
+      height: 30rem; } }
   @media (max-width: 56.25em) {
     .breed__wrap {
-      height: 60vh; } }
+      height: 65rem; } }
 
 .breed__img-wrapper {
   position: absolute;
@@ -733,6 +732,9 @@ body {
     border-collapse: collapse; }
   .hoofd-table td:first-child {
     font-weight: 600; }
+  @media (max-width: 56.25em) {
+    .hoofd-table {
+      width: 100%; } }
 
 .sticky {
   position: sticky;
@@ -756,3 +758,6 @@ body {
     color: #ffc837;
     border-bottom: 2px solid #FFC837;
     transform: translateY(-0.5rem) scale(1.02); }
+
+.text-list {
+  margin-left: 3rem; }
