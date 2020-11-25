@@ -8,29 +8,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" type="image/png" href="../img/CPCN-Kleur-CMYK-LO-01.jpg">
 </head>
 <body>
 <!-- NAVIGATION -->
-    <nav class="navigation"  id="bookmarks">
-        <div class="navigation__logo-box"><img src="../img/CPCN-Kleur-RGB-LO-01.png" alt="Logo" class="navigation__logo"></div>
-        <ul class="navigation__list">
-            <li class="navigation__item"><a href="../index.html" class="navigation__link">Home</a></li>
-            <li class="navigation__item"><a href="ourClub.html" class="navigation__link">Our Club</a></li>
-            <li class="navigation__item navigation__dropdown">
-                <a href="chodskyPes.html" class="navigation__link u-link-active">The Chodsky Pes <span>&#x25BE;</span></a>
-                <div class="navigation__dropdown-menu">
-                    <a class="navigation__dropdown-item" href="#geschiedenis">Geschiedenis</a>
-                    <a class="navigation__dropdown-item" href="#karakter">Karakter</a>
-                    <a class="navigation__dropdown-item" href="#raskenmerken">Raskenmerken</a>
-                    <a class="navigation__dropdown-item" href="#gezondheid">Gezondheid</a>
-                    <hr>
-                    <a class="navigation__dropdown-item navigation__kennelInfo" href="#">Kennel Info</a>
-                </div>
-            </li>
-            <li class="navigation__item"><a href="#" class="navigation__link u-link-disabled">Gallery</a></li>
-            <li class="navigation__item navigation__item--right"><a href="#" class="navigation__link u-link-disabled">en/nl</a></li>
-        </ul>
-    </nav>
+    <div class="navigation row"  id="bookmarks">
+
+        <div class="navigation__logo-box row"><img src="../img/CPCN-Kleur-RGB-LO-01.png" alt="Logo" class="navigation__logo"></div>
+        
+        <input type="checkbox" id="navi-toggle" class="navigation__checkbox">
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="../index.html" class="navigation__link">Home</a></li>
+                <li class="navigation__item"><a href="ourClub.html" class="navigation__link">Our Club</a></li>
+                <li class="navigation__item navigation__dropdown">
+                    <a href="chodskyPes.html" class="navigation__link u-link-active">The Chodsky Pes <span class="navigation__span">&#x25BE;</span></a>
+                    <div class="navigation__dropdown-menu">
+                        <a class="navigation__dropdown-item" href="#geschiedenis">Geschiedenis</a>
+                        <a class="navigation__dropdown-item" href="#karakter">Karakter</a>
+                        <a class="navigation__dropdown-item" href="#raskenmerken">Raskenmerken</a>
+                        <a class="navigation__dropdown-item" href="#gezondheid">Gezondheid</a>
+                        <hr>
+                        <a class="navigation__dropdown-item navigation__kennelInfo" href="#">Kennel Info</a>
+                    </div>
+                </li>
+                <li class="navigation__item"><a href="#" class="navigation__link navigation__link--hidden">Kennel Info</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link u-link-disabled">Gallery</a></li>
+                <li class="navigation__item navigation__item--right"><a href="#" class="navigation__link u-link-disabled">en/nl</a></li>
+            </ul>
+        </nav>
+        
+    </div>
 
 <!-- HEADER -->
     <div class="row">
@@ -471,28 +484,52 @@
 
 
 <!-- FOOTER -->
-    <footer class="footer">
-        <div class="footer__logo-box">
-            <img src="../img/CPCN-Kleur-RGB-LO-01.png" alt="Full logo" class="footer__logo">
-        </div>
-        <div class="row">
-            <div class="col-1-of-2">
-                <div class="footer__navigation">
-                    <ul class="footer__list">
-                        <li class="footer__item"><a href="#" class="footer__link">Organization</a></li>
-                        <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
-                        <li class="footer__item"><a href="#" class="footer__link">Privacy Policy</a></li>
-                        <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
-                    </ul>
-                </div>
+<footer class="footer">
+    <div class="footer__logo-box">
+        <img src="../img/CPCN-Kleur-RGB-LO-01.png" alt="Full logo" class="footer__logo">
+    </div>
+    <div class="row">
+        <div class="col-2-of-3">
+            <div class="footer__navigation">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link" target="_blank">Sponsorship</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="https://irp-cdn.multiscreensite.com/07069212/files/uploaded/Statuten%20CPCN%2020-07-2019.pdf" class="footer__link" target="_blank">Statuten</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="https://irp-cdn.multiscreensite.com/07069212/files/uploaded/Ledenconvenant.pdf" class="footer__link" target="_blank">Leden Convenant</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="https://irp-cdn.multiscreensite.com/07069212/files/uploaded/Chodsky%20Pes%20Club%20Nederland%20privacy%20statement%2019-07-2019.pdf" class="footer__link" target="_blank">Privacy Statement</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="https://irp-cdn.multiscreensite.com/07069212/files/uploaded/Huishoudelijk%20reglement%20CPCN%2020-07-2019.pdf" class="footer__link" target="_blank">Huishoudelijk reglement</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="https://irp-cdn.multiscreensite.com/07069212/files/uploaded/Fokregelement%20CPCN%2022-09-2019.pdf" class="footer__link" target="_blank">Fokreglement</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="https://www.facebook.com/Chodskypesclubnederland" class="footer__link" target="_blank">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="https://www.instagram.com/chodskypesclub/" class="footer__link" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <div class="col-1-of-2">
-                <p class="footer__copyright">
-                    Designed and built by <a href="#" class="footer__link">Diana Vitanyi</a>. Copyright &copy; by <a href="#" class="footer__link">Diana Vitanyi</a> for both comercial and personal use, but not to claim it as your own design. A credit to the original author is well appreciated.
-                </p>
-            </div>
         </div>
-    </footer>
+        <div class="col-1-of-3">
+            <p class="footer__copyright">
+                Designed and built by <a href="#" class="footer__link">Diana Vitanyi</a>. Copyright &copy; by <a href="#" class="footer__link">Diana Vitanyi</a> for both comercial and personal use, but not to claim it as your own design. A credit to the original author is well appreciated.
+            </p>
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>

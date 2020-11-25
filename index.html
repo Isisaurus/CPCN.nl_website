@@ -8,29 +8,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/CPCN-Kleur-CMYK-LO-01.jpg">
 </head>
 <body>
     <!-- NAVIGATION -->
-    <nav class="navigation">
-        <div class="navigation__logo-box"><img src="img/CPCN-Kleur-RGB-LO-01.png" alt="Logo" class="navigation__logo"></div>
-        <ul class="navigation__list">
-            <li class="navigation__item"><a href="index.html" class="navigation__link u-link-active">Home</a></li>
-            <li class="navigation__item"><a href="pages/ourClub.html" class="navigation__link">Our Club</a></li>
-            <li class="navigation__item navigation__dropdown">
-                <a href="pages/chodskyPes.html" class="navigation__link">The Chodsky Pes <span>&#x25BE;</span></a>
-                <div class="navigation__dropdown-menu">
-                    <a class="navigation__dropdown-item" href="pages/chodskyPes.html#geschiedenis">Geschiedenis</a>
-                    <a class="navigation__dropdown-item" href="pages/chodskyPes.html#karakter">Karakter</a>
-                    <a class="navigation__dropdown-item" href="pages/chodskyPes.html#raskenmerken">Raskenmerken</a>
-                    <a class="navigation__dropdown-item" href="pages/chodskyPes.html#gezondheid">Gezondheid</a>
-                    <hr>
-                    <a class="navigation__dropdown-item navigation__kennelInfo" href="#">Kennel Info</a>
-                  </div>
-            </li>
-            <li class="navigation__item"><a href="#" class="navigation__link u-link-disabled">Gallery</a></li>
-            <li class="navigation__item navigation__item--right"><a href="#" class="navigation__link u-link-disabled">en/nl</a></li>
-        </ul>
-    </nav>
+    <div class="navigation row">
+
+        <div class="navigation__logo-box row"><img src="img/CPCN-Kleur-RGB-LO-01.png" alt="Logo" class="navigation__logo"></div>
+
+        <input type="checkbox" id="navi-toggle" class="navigation__checkbox">
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
+        
+        <div class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="index.html" class="navigation__link u-link-active">Home</a></li>
+                <li class="navigation__item"><a href="pages/ourClub.html" class="navigation__link">Our Club</a></li>
+                <li class="navigation__item navigation__dropdown">
+                    <a href="pages/chodskyPes.html" class="navigation__link">The Chodsky Pes <span class="navigation__span">&#x25BE;</span></a>
+                    <div class="navigation__dropdown-menu">
+                        <a class="navigation__dropdown-item" href="pages/chodskyPes.html#geschiedenis">Geschiedenis</a>
+                        <a class="navigation__dropdown-item" href="pages/chodskyPes.html#karakter">Karakter</a>
+                        <a class="navigation__dropdown-item" href="pages/chodskyPes.html#raskenmerken">Raskenmerken</a>
+                        <a class="navigation__dropdown-item" href="pages/chodskyPes.html#gezondheid">Gezondheid</a>
+                        <hr>
+                        <a class="navigation__dropdown-item navigation__kennelInfo" href="#">Kennel Info</a>
+                      </div>
+                </li>
+                <li class="navigation__item"><a href="#" class="navigation__link navigation__link--hidden">Kennel Info</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link u-link-disabled">Gallery</a></li>
+                <li class="navigation__item navigation__item--right"><a href="#" class="navigation__link u-link-disabled">en/nl</a></li>
+            </ul>
+        </div>
+    
+    </div>
 
     <!-- HEADER -->
 
@@ -38,15 +51,15 @@
         <div class="row header__row">
                 <div class="header__wrapper">
                     <h1 class="header__primary u-margin-bottom-small">The Chodsky Pes Club Netherlands</h1>
-                    <h3 class="header__tertiary u-margin-bottom-small">A community with a passion for the Chodky Pes breed.</h3>
+                    <p class="mainp u-margin-bottom-small">A community with a passion for the Chodky Pes breed.</p>
 
                     <a href="pages/ourClub.html" class="button button__primary button__primary--animated  button__primary--white u-margin-top-small">Learn more</a>
 
                     <div class="header-sm__wrap u-margin-top-small">
-                        <a href="#" class="header-sm__link" target="_blank">
+                        <a href="https://www.facebook.com/Chodskypesclubnederland" class="header-sm__link" target="_blank">
                             <i class="fab fa-facebook-square header-sm__icon"></i>
                         </a>
-                        <a href="#" class="header-sm__link" target="_blank">
+                        <a href="https://www.instagram.com/chodskypesclub/" class="header-sm__link" target="_blank">
                             <i class="fab fa-instagram header-sm__icon"></i>
                         </a>
                     </div>
@@ -64,7 +77,7 @@
     </section>
     <!-- SPONSORS -->
 
-    <section class="sponsors u-margin-bottom-huge">
+    <section class="sponsors u-margin-bottom-big">
         <div class="sponsors sponsors__container row">
             <ul class="sponsors__list">
                 <li class="sponsors__item">
@@ -103,9 +116,18 @@
     <!-- FEATURES -->
     <section class="feature u-margin-bottom-huge">
         <div class="u-center-text u-margin-bottom-small">
-            <h2 class="header__secondary u-margin-bottom-small">Our Club</h2>
+            <h2 class="header__secondary u-margin-bottom-small">The Club's Activities</h2>
         </div>
         <div class="row feature-row">
+            <div class="col-1-of-3">
+                <div class="feature-box">
+                    <a href="pages/chodskyPes.html" class="feature-box__link">
+                        <i class="fas fa-info feature-box__icon"></i>
+                        <h3 class="header__tertiary u-margin-bottom-small">Share knowledge</h3>
+                        <p class="feature-box__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci a laborum aliquam incidunt, nisi ad.</p>
+                    </a>
+                </div>
+            </div>
             <div class="col-1-of-3">
                 <div class="feature-box">
                     <a href="pages/chodskyPes.html" class="feature-box__link">
@@ -117,18 +139,9 @@
             </div>
             <div class="col-1-of-3">
                 <div class="feature-box">
-                    <a href="pages/chodskyPes.html" class="feature-box__link">
-                        <i class="fas fa-info feature-box__icon"></i>
-                        <h3 class="header__tertiary u-margin-bottom-small">We share knowledge</h3>
-                        <p class="feature-box__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci a laborum aliquam incidunt, nisi ad.</p>
-                    </a>
-                </div>
-            </div>
-            <div class="col-1-of-3">
-                <div class="feature-box">
                     <a href="pages/ourClub.html" class="feature-box__link">
                         <i class="far fa-calendar-alt feature-box__icon"></i>
-                        <h3 class="header__tertiary u-margin-bottom-small">Organize Events</h3>
+                        <h3 class="header__tertiary u-margin-bottom-small">Organize events</h3>
                         <p class="feature-box__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci a laborum aliquam incidunt, nisi ad.</p>
                     </a>
                 </div>
@@ -139,8 +152,8 @@
     <section class="breed u-margin-bottom-huge">
         <div class="row breed__wrap">
             <div class="col-1-of-2">
-                <h2 class="header__secondary u-margin-top-small u-margin-bottom-small">The Chodsky Pes</h2>
-                <p class="paragraph u-margin-bottom-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni atque incidunt, nemo, expedita quasi recusandae qui natus laudantium, repellat hic repellendus ad modi aliquid fugit.</p>
+                <h2 class="header__secondary u-margin-top-small u-margin-bottom-small">De Chodsky Pes</h2>
+                <p class="paragraph u-margin-bottom-small">De Chodsky pes (Boheemse Herder in de Nederlandse benaming) is één van de oudste herdershondenrassen ter wereld. De geschiedenis van het ras gaat terug tot in de 13e eeuw en wellicht nog wel daarvoor...</p>
                 <a href="pages/chodskyPes.html" class="button button__primary">Discover more</a>
             </div>
             <div class="col-1-of-2 breed_column u-margin-top-big">
@@ -185,17 +198,41 @@
             <img src="img/CPCN-Kleur-RGB-LO-01.png" alt="Full logo" class="footer__logo">
         </div>
         <div class="row">
-            <div class="col-1-of-2">
+            <div class="col-2-of-3">
                 <div class="footer__navigation">
                     <ul class="footer__list">
-                        <li class="footer__item"><a href="#" class="footer__link">Organization</a></li>
-                        <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
-                        <li class="footer__item"><a href="#" class="footer__link">Privacy Policy</a></li>
-                        <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link" target="_blank">Sponsorship</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="https://irp-cdn.multiscreensite.com/07069212/files/uploaded/Statuten%20CPCN%2020-07-2019.pdf" class="footer__link" target="_blank">Statuten</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="https://irp-cdn.multiscreensite.com/07069212/files/uploaded/Ledenconvenant.pdf" class="footer__link" target="_blank">Leden Convenant</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="https://irp-cdn.multiscreensite.com/07069212/files/uploaded/Chodsky%20Pes%20Club%20Nederland%20privacy%20statement%2019-07-2019.pdf" class="footer__link" target="_blank">Privacy Statement</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="https://irp-cdn.multiscreensite.com/07069212/files/uploaded/Huishoudelijk%20reglement%20CPCN%2020-07-2019.pdf" class="footer__link" target="_blank">Huishoudelijk reglement</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="https://irp-cdn.multiscreensite.com/07069212/files/uploaded/Fokregelement%20CPCN%2022-09-2019.pdf" class="footer__link" target="_blank">Fokreglement</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="https://www.facebook.com/Chodskypesclubnederland" class="footer__link" target="_blank">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="https://www.instagram.com/chodskypesclub/" class="footer__link" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
-            <div class="col-1-of-2">
+            <div class="col-1-of-3">
                 <p class="footer__copyright">
                     Designed and built by <a href="#" class="footer__link">Diana Vitanyi</a>. Copyright &copy; by <a href="#" class="footer__link">Diana Vitanyi</a> for both comercial and personal use, but not to claim it as your own design. A credit to the original author is well appreciated.
                 </p>
