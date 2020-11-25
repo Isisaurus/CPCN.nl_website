@@ -446,7 +446,9 @@ body {
     visibility: hidden; }
   @media (max-width: 56.25em) {
     .navigation {
-      margin-top: 4rem; }
+      margin-top: 4rem;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden; }
       .navigation__button, .navigation__icon, .navigation__background {
         display: inline-block;
         visibility: visible; }
@@ -470,7 +472,7 @@ body {
         font-size: 2.5rem;
         opacity: 0;
         visibility: hidden;
-        width: 100vh;
+        width: 100%;
         transition: all 1s; }
       .navigation__list {
         width: 100%;
